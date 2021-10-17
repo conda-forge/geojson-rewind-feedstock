@@ -1,5 +1,5 @@
 {% set name = "geojson-rewind" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geojson-rewind-{{ version }}.tar.gz
-  sha256: 144eed294b0dea2e5a84257dec8dbf98b4db874f3b7092bc6bd3e782f826be5c
+  sha256: 3ba2c88b99855c6b8201834a476e7041fb04b377d4e5c1f3fb293daeac00f717
 
 build:
   number: 0
