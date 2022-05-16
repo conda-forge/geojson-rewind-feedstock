@@ -1,5 +1,5 @@
 {% set name = "geojson-rewind" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geojson-rewind-{{ version }}.tar.gz
-  sha256: 3ba2c88b99855c6b8201834a476e7041fb04b377d4e5c1f3fb293daeac00f717
+  sha256: f9a0972992f20c863aa44f6f486dbb200ce3b95491aa92f35c51857353985d01
 
 build:
   number: 0
@@ -16,14 +16,12 @@ build:
   entry_points:
     - rewind = geojson_rewind.rewind:main
   script:
-    # Removing pyproject.toml here due to pip bug
-    - {{ PYTHON }} -c "__import__('os').unlink('pyproject.toml')"
     - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - poetry
+    - poetry >=1.0.2
     - python >=3.6
   run:
     - python >=3.6
