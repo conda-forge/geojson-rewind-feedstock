@@ -16,14 +16,12 @@ build:
   entry_points:
     - rewind = geojson_rewind.rewind:main
   script:
-    # Removing pyproject.toml here due to pip bug
-    - {{ PYTHON }} -c "__import__('os').unlink('pyproject.toml')"
     - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - poetry
+    - poetry >=1.0.2
     - python >=3.6
   run:
     - python >=3.6
