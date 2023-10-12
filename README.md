@@ -1,11 +1,11 @@
-About geojson-rewind
-====================
+About geojson-rewind-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geojson-rewind-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/chris48s/geojson-rewind
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geojson-rewind-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python library for enforcing polygon ring winding order in GeoJSON
 
