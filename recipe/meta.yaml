@@ -21,7 +21,7 @@ build:
 requirements:
   host:
     - pip
-    - poetry >=1.0.2
+    - poetry-core
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
